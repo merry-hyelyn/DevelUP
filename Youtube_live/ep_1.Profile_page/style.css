@@ -1,5 +1,9 @@
 /* Reset */
-h1 {
+h1,
+p,
+h2,
+dl,
+dd {
     margin: 0;
 }
 
@@ -27,28 +31,105 @@ body {
 }
 
 .card-main {
-    overflow: hidden;
 }
 
 .title {
     background-color: #666666;
-    padding: 20px 0 0;
+    padding: 20px 0;
 }
 
 .title-icon {
     float: left;
-    border-radius: 50px;
+    border-radius: 50%;
     border: 8px solid white;
-    margin-left: 50px;
+    background-color: white;
+    margin-left: -58px;
 }
 
 .title h1 {
-    border: 5px solid red;
     overflow: hidden;
     padding: 0 20px;
 }
 .contents {
-    border: 5px solid blue;
     padding: 20px;
     overflow: hidden;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #999;
+}
+.section:last-child {
+    margin-bottom: 0;
+}
+
+.skill {
+    overflow: hidden;
+}
+.skill-icon {
+    clear: left;
+}
+
+.skill-score {
+}
+
+.skill-icon,
+.skill-score {
+    float: left;
+}
+
+.skill-icon {
+    background-image: url(images/icon-sprite.png);
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background-size: auto 30px;
+    margin-bottom: 5px;
+}
+
+.skill-icon_html5 {
+    background-position: left top;
+}
+
+.skill-icon_css3 {
+    background-position: center top;
+}
+
+.skill-icon_javascript {
+    background-position: right top;
+}
+
+.contact- {
+}
+
+.contact-anchor {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-indent: -9999px;
+    overflow: hidden;
+    background-image: url(images/contact-sprite.png);
+    background-size: auto 30px;
+    opacity: 0.4;
+}
+
+.contact-anchor_facebook {
+    background-position: left top;
+}
+
+.contact-anchor_github {
+    background-position: center top;
+}
+
+.contact-anchor_youtube {
+    background-position: right top;
+}
+
+.contact-anchor:hover {
+    opacity: 1;
 }
